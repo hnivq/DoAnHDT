@@ -119,6 +119,7 @@ public class SearchFrm extends javax.swing.JFrame {
         showTbl = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        setTitle("Tìm kiếm");
 
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
@@ -286,8 +287,11 @@ public class SearchFrm extends javax.swing.JFrame {
         } else { // chon dong can sua va nhan nut
             int click = JOptionPane.showConfirmDialog(rootPane, "Bạn chọn xóa hàng hóa này!!!");
             if(click == JOptionPane.YES_OPTION);
-            DanhSachQuanLy.list.remove(DanhSachQuanLy.list.get(selectedIndex));
-            JOptionPane.showMessageDialog(rootPane, "Xóa thành công!!!");
+            {
+               DanhSachQuanLy.list.remove(DanhSachQuanLy.list.get(selectedIndex));
+               Stuff.setTotalStuff(Stuff.getTotalStuff()- 1);
+               JOptionPane.showMessageDialog(rootPane, "Xóa thành công!!!");
+            }
             fillToTable(min, max);
         }
     }//GEN-LAST:event_deleteBtnActionPerformed

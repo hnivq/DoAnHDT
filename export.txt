@@ -3,12 +3,23 @@
 
 
 
-Loại hàng: Thực phẩm
-Tên hàng: Su hào
-Mã hàng: FD 000007
-Giá hàng: 5000
+
+
+
+
+
+
+
+Loại hàng: Đồ điện tử
+Tên hàng: Webcam Logitech C920
+Mã hàng: EC 000007
+Giá hàng: 1650000
 Số lượng xuất: 10
-Ngày xuất kho: 07/12/2021
+Ngày xuất kho: 20/12/2021
+-*-*-*------------------*-*-*-
+
+
+
 
 
 

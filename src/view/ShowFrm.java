@@ -876,8 +876,11 @@ public class ShowFrm extends javax.swing.JFrame {
         } else { // chon dong can sua va nhan nut
             int click = JOptionPane.showConfirmDialog(rootPane, "Bạn chọn xóa hàng hóa này!!!");
             if(click == JOptionPane.YES_OPTION);
+            {
                DanhSachQuanLy.list.remove(DanhSachQuanLy.list.get(selectedIndex));
-            JOptionPane.showMessageDialog(rootPane, "Xóa thành công!!!");
+               Stuff.setTotalStuff(Stuff.getTotalStuff()- 1);
+               JOptionPane.showMessageDialog(rootPane, "Xóa thành công!!!");
+            }
             fillToTable();
         }
     }//GEN-LAST:event_deleteBtnActionPerformed

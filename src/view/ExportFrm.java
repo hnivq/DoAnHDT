@@ -66,6 +66,7 @@ public class ExportFrm extends javax.swing.JFrame {
         backBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        setTitle("Xuất hàng");
 
         typeLabel.setText("Loại");
 

@@ -329,11 +329,14 @@ public class EditFrm extends javax.swing.JFrame {
                 if(stuff.getSerialString().equals(serial)) {
                     int click = JOptionPane.showConfirmDialog(rootPane, "Bạn chọn xóa hàng hóa này!!!");
                     if(click == JOptionPane.YES_OPTION);
+                    {
                     DanhSachQuanLy.list.remove(stuff);
+                    Stuff.setTotalStuff(Stuff.getTotalStuff()- 1);
+                    JOptionPane.showMessageDialog(rootPane, "Xóa thành công!!!");
+                    }   
                     break;
                 }
         }
-        JOptionPane.showMessageDialog(rootPane, "Xóa thành công!!!");
         ShowFrm show = new ShowFrm();
         show.setVisible(true);
         show.fillToTable();
